@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cute"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:text="New Tasks"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="4"
+            android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:hint="Make coffee for my cat"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black_alt"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/pokemon"
+            android:text="+"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cute"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:text="Existing Tasks"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="34sp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
